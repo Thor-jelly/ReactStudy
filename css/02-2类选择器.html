@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .p1 {
+            color: red;
+        }
+
+        .p2 {
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>类选择器</h1>
+    <h2>结构：.类名{css属性名：属性值；</h2>
+    <p>作用：通过类名，找到页面中所有带有这个类名的标签，设置样式</p>
+
+    注意点：
+    <ol>
+        <li>所有标签上都有class属性，class属性的属性值称为类名（类似于名字）</li>
+        <li>类名可以由数字、字母、下划线、中划线组成，但不能以数字或者中划线开头</li>
+        <li>一个标签可以同时有多个类名，类名之间以空格隔开</li>
+        <li>类名可以重复，一个类选择器可以同时选中多个标签</li>
+    </ol>
+
+    <p>我是用例1，我是默认样式</p>
+    <p class="p1">我是用例2，字体颜色变红</p>
+    <p class="p1 p2">我是用例3，字体红色 字体大小25。我是实用了2个类选择器</p>
+</body>
+
+</html>
