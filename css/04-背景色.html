@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 背景图片 */
+        div {
+            width: 900px;
+            height: 400px;
+            background-image: url(./imgs/background-image-repeat.png);
+            background-repeat:no-repeat;
+            background-color: pink;
+            background-position: right, 0;
+        }
+
+        .bg{
+            width: 1999px;
+            height: 500px;
+            background: url(./imgs/background-image-repeat.png) no-repeat right bottom;
+        }
+    </style>
+</head>
+
+<body>
+    <div>我是div展示的文字</div>
+    <div class="bg">我是div展示的文字</div>
+    <p>background-color 背景颜色</p>
+    <p>background-image 背景图片</p>
+    <p>background-position 背景位置</p>
+</body>
+
+</html>
