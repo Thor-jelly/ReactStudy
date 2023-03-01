@@ -6,6 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .onediv {
+            width: 400px;
+            height: 400px;
+            background-color: green;
+            border: 10px pink solid;
+            /* padding-left: 10px; */
+            /* padding: 10px; */
+            padding: 10px 20px;
+            /* 盒子属性自动减去添加区域宽度 */
+            box-sizing: border-box;
+            /* 盒子在父布局中居中 */
+            margin: 0 auto;
+        }
+    </style>
 </head>
 
 <body>
@@ -20,9 +41,11 @@
 
     <hr>
 
+    <p>清楚内外边距 margin:0 padding:0</p>
+
     <p>盒子尺寸400x400 背景色绿色 边框10px 实线黑色</p>
 
-    <div></div>
+    <div class="onediv">div</div>
 </body>
 
 </html>
