@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .testone {
+            width: 100px;
+            height: 50px;
+            background-color: pink;
+        }
+
+        .testoneone {
+            margin-bottom: 50px;
+        }
+        .testonetwo {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 外边距折叠现象 合并现象 -->
+    <h1>外边距折叠现象 合并现象</h1>
+    <p>场景：垂直布局 的 块级元素，上下的margin会合并</p>
+    <p>结果：最终两者距离为margin的最大值</p>
+    <p>解决方法：避免就好</p>
+    <ul>
+        <li>只给其中一个盒子设置margin</li>
+    </ul>
+
+    <p>实战</p>
+    <div class="testone testoneone"></div>
+    <div class="testone testonetwo"></div>
+    <p>两个盒子 设置外边距 只要设置一个就可以了</p>
+
+
+    
+</body>
+
+</html>
