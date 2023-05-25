@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css/02-10结构伪类选择器.html</title>
+
+    <style>
+        /* 获取第一个元素 */
+        li:first-child {
+            background-color: greenyellow;
+        }
+
+        /* 获取任意一个 */
+        /* li:nth-child(3) {
+            background-color: aqua;
+        } */
+        /* 获取偶数 */
+        li:nth-child(2n) {
+            background-color: aqua;
+        }
+
+        /* 找到第一个元素里面的a */
+        li:first-child a{
+            background-color: red;
+        }
+
+        /* 找到第二个元素里面第二个a */
+        li:nth-child(2) a:nth-child(2){
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>10结构伪类选择器</h1>
+    <p>作用与优势</p>
+    <ul>
+        <li>作用：根据元素在html中的结构关系查找元素</li>
+        <li>优势：减少对与html中类的依赖，有利于保持代码整洁</li>
+        <li>场景：常用于查找某父级选择器中的子元素</li>
+    </ul>
+
+    <p>选择器</p>
+
+    <table border="1">
+        <tr>
+            <td>选择器</td>
+            <td>说明</td>
+        </tr>
+        <tr>
+            <td>E:first-child{}</td>
+            <td>匹配父元素中第一个子元素，并且是E元素</td>
+        </tr>
+        <tr>
+            <td>E:last-child{}</td>
+            <td>匹配父元素中最后一个子元素，并且是E元素</td>
+        </tr>
+        <tr>
+            <td>E:nth-child(n){}</td>
+            <td>匹配父元素中第n个子元素，并且是E元素</td>
+        </tr>
+        <tr>
+            <td>E:nth-last-child(n){}</td>
+            <td>匹配父元素中倒数第n个子元素，并且是E元素</td>
+        </tr>
+    </table>
+
+    <p>n的注意点</p>
+    <table border="1">
+        <tr>
+            <td>功能</td>
+            <td>公式</td>
+        </tr>
+        <tr>
+            <td>偶数</td>
+            <td>2n、even</td>
+        </tr>
+        <tr>
+            <td>奇数</td>
+            <td>2n+1、2n-1、odd</td>
+        </tr>
+        <tr>
+            <td>找到前5个</td>
+            <td>-n+5</td>
+        </tr>
+        <tr>
+            <td>找到从第5个往后</td>
+            <td>n+5</td>
+        </tr>
+    </table>
+
+
+    <p>快捷生成下面代码 ul>li{这是第$个li}*8</p>
+    <ul>
+        <li>这是第1个li</li>
+        <li>这是第2个li</li>
+        <li>这是第3个li</li>
+        <li>这是第4个li</li>
+        <li>这是第5个li</li>
+        <li>这是第6个li</li>
+        <li>这是第7个li</li>
+        <li>这是第8个li</li>
+    </ul>
+
+    <ul>
+        <li><a href="#">这是第1个li里面的a</a> <a href="#">这是第1个li里面的a</a></li>
+        <li><a href="#">这是第2个li里面的a</a> <a href="#">这是第2个li里面的a</a> <a href="#">这是第2个li里面的a</a></li>
+        <li><a href="#">这是第3个li里面的a</a></li>
+        <li><a href="#">这是第4个li里面的a</a></li>
+        <li><a href="#">这是第5个li里面的a</a></li>
+        <li><a href="#">这是第6个li里面的a</a></li>
+        <li><a href="#">这是第7个li里面的a</a></li>
+        <li><a href="#">这是第8个li里面的a</a></li>
+    </ul>
+
+</body>
+
+</html>

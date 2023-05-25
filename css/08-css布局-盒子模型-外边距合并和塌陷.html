@@ -17,8 +17,30 @@
         .testoneone {
             margin-bottom: 50px;
         }
+
         .testonetwo {
             margin-top: 50px;
+        }
+
+        .twof {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            /* 如果设计稿没有设计border就不能使用这个方案了 */
+            /* border: 1px solid #000; */
+            /* border-top: 10px solid #000; */
+            /* padding-top: 1px; */
+
+            overflow: hidden;
+        }
+        .twoc {
+            width: 30px;
+            height: 30px;
+            background-color: blanchedalmond;
+            margin-top: 50px;
+
+            /* 转换成行内块元素 */
+            /* display: inline-block; */
         }
     </style>
 </head>
@@ -39,8 +61,31 @@
     <div class="testone testonetwo"></div>
     <p>两个盒子 设置外边距 只要设置一个就可以了</p>
 
+    <!-- 塌陷现象 -->
+    <h1>外边距折叠现象-塌陷现象</h1>
+    <p>场景：互相嵌套 的 块级元素，紫元素的margin-top 会作用在父元素上</p>
+    <p>结果：导致父元素一起往下移动</p>
+    <p>解决方案：</p>
+    <ul>
+        <!-- 如果设计稿没有设计border就不能使用这个方案了 -->
+        <li>给父元素设置borader-top 或者 padding-top(分隔父子元素的margin-top)</li>
+        <li>给父元素设置overflow:hidden 推荐这种</li>
+        <li>转换成行内块元素</li>
+        <li>设置浮动</li>
+    </ul>
 
-    
+    <!-- 塌陷现象 -->
+    <div class="twof">
+        <div class="twoc">
+            twoc
+        </div>
+    </div>
+
+
+    <!-- 行内元素 内外边距 -->
+    <h1>行内元素 内外边距 margin padding</h1>
+    <p>如果想通过margin 或 padding 改变行内标签的垂直位置， 无法生效</p>
+    解决方案：使用行高属性 line-height
 </body>
 
 </html>
