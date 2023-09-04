@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 过渡一般都配合hover使用 谁变化谁加过渡属性*/
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /*鼠标悬停的时候 宽度200 变化到 宽度600 */
+            /* transition: width 1s; */
+            /* transition: width 1s, background-color 2s; */
+            /* 一般都是直接写all 所有都加上 */
+            transition: all 1s;
+        }
+
+        .box:hover {
+            width: 600px;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>过渡</h1>
+    <p>作用：让元素的样式慢慢的变化，常配合hover使用，增强网页交互体验</p>
+    <p>属性：transition</p>
+
+    <p>取值</p>
+    <table border="1">
+        <thead>
+            <th>参数</th>
+            <th>取值</th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>过渡的属性</td>
+                <td>all：所有能过渡的属性都过渡、具体属性名如：width：只有width有过渡</td>
+            </tr>
+
+            <tr>
+                <td>过渡的时长</td>
+                <td>数字+s （秒）</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p></p>
+
+    <div class="box"></div>
+</body>
+
+</html>
