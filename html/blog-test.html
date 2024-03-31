@@ -1,11 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Html入门Demo 我的博客</title>
-</head>
-<body>
-    
-</body>
+    <style>
+      html {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <img
+        src="https://www.w3cschool.cn/statics/demosource/myblog/avatar.png"
+        alt="头像"
+        class="img-circle"
+      />
+      <p>wdd</p>
+    </header>
+
+    <article>
+      <section>
+        <h2><span>关于我</span></h2>
+        <p>
+          嘿！我是<strong>wdd</strong>。编码改变了我的世界。它不仅仅是应用程序。学习代码给了我解决问题的技能和在技术层面与他人沟通的途径。我也可以开发网站，并使用我的编程技术来获得更好的工作。我是在
+          <strong>W3Cschool</strong>
+          学到了所有这些，这让我也保持了对学习编程的积极性。加入我这个有益的学习旅程。沿途你会获得乐趣，得到帮助，学习更多知识！
+        </p>
+        <p class="quote">"I love coding, I love wdd!"</p>
+      </section>
+
+      <section>
+        <h2><span>我的技能</span></h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2><span>我的时间表</span></h2>
+        <table border="1px">
+          <tr>
+            <th>Day</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+          </tr>
+          <tr>
+            <td>8:00-8:30</td>
+            <td>Learn</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>9:00-10:00</td>
+            <td></td>
+            <td>Practice</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>10:00-13:30</td>
+            <td></td>
+            <td></td>
+            <td>Play</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>15:45-17:00</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Code</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>18:00-18:15</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Discuss</td>
+          </tr>
+        </table>
+      </section>
+    </article>
+
+    <footer>
+      <form>
+        <fieldset>
+          <legend>联系我</legend>
+          <label for="fname">名字：</label>
+          <input type="text" id="fname" name="fname"><br><br>
+          <label for="lname">姓氏：</label>
+          <input type="text" id="lname" name="lname"><br><br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email"><br><br>
+          <label for="birthday">Birthday:</label>
+          <input type="date" id="birthday" name="birthday"><br><br>
+          <input type="submit" value="提交">
+        </fieldset>
+      </form>
+
+      <div>
+        <h2><span>关注我</span></h2>
+        <div>
+          <a href="#">
+            <img
+              alt="qq"
+              src="https://www.w3cschool.cn/statics/demosource/myblog/qq.png"
+              width="50px"
+              height="50px"
+            />
+          </a>
+          <a href="#">
+            <img
+              alt="weixin"
+              src="https://www.w3cschool.cn/statics/demosource/myblog/weixin.png"
+              width="50px"
+              height="50px"
+            />
+          </a>
+          <a href="#">
+            <img
+              alt="weibo"
+              src="https://www.w3cschool.cn/statics/demosource/myblog/weibo.png"
+              width="50px"
+              height="50px"
+            />
+          </a>
+        </div>
+      </div>
+
+      <br/>
+      <div>&copy; 2019 My Blog. All rights reserved.</div>
+    </footer>
+  </body>
 </html>
