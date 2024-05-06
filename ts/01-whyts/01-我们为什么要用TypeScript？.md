@@ -182,7 +182,7 @@ console.log(name, age);
 
 这个代码在mock数据中是可以正常运行的，但是当你切换到ts环境中去时。就会出现问题了。
 
-![ts错误提示](D:\github\ReactStudy\ts\01-whyts\01.png)
+![ts错误提示](.\01.png)
 
 可以发现在 isNaN(id) 后 返回了 undefined 类型，导致 解结构 失败了。
 
