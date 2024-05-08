@@ -12,3 +12,6 @@
 
 [01-我们为什么要用TypeScript？](./01-whyts/01-我们为什么要用TypeScript？.md)
 
+[02-怎样标注类型](./02-howtomarktype/02-怎么样标注类型.md)
+
+[03-js和ts相关的类型](./03-jstsrelatedtype/03-js和ts相关的类型.md)
